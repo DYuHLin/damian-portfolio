@@ -85,11 +85,93 @@ main {
 }
 
 .home-section {
-    min-height: 100vh;
+    margin: 28px;
+    min-height: 80vh;
     min-width: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.home-title {
+    font-size: 56px;
+    color: hsl(260, 100%, 55%);
+}
+
+.name {
+    font-size: 42px;
+    color: hsl(260, 100%, 60%);
+    border-right: 5px solid hsl(260, 100%, 60%);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+.my-title {
+    font-size: 26px;
+    color: hsl(260, 100%, 70%);
+    animation: opac 4s ease-in;
+}
+
+.home-btns {
+    display: flex;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.home-about {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: hsl(260, 100%, 60%);
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 4px solid hsl(260, 100%, 60%);
+    transition: all 0.3s;
+}
+
+.home-about:hover {
+    transform: translateY(-5px);
+    background-color: hsl(260, 100%, 60%);
+    color: white;
+}
+
+.home-cv {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(260, 100%, 60%);
+    border-radius: 5px;
+    border: 4px solid hsl(260, 100%, 60%);
+    transition: all 0.3s;
+}
+
+.home-cv:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: hsl(260, 100%, 60%);
+}
+
+@keyframes opac {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media(max-width: 768px) {
