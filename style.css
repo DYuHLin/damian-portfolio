@@ -90,7 +90,8 @@ main {
 }
 
 .home-section {
-    margin: 28px;
+    margin-left: 28px;
+    margin-right: 28px;
     min-height: 100vh;
     min-width: 100vh;
     display: flex;
@@ -102,12 +103,28 @@ main {
     margin: 28px;
     min-height: 100vh;
     min-width: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
 }
 
 .home-title {
     font-size: 56px;
     color: hsl(260, 100%, 55%);
     animation: loadHome 1s ease-in;
+}
+
+.about-container {
+    display: flex;
+    gap: 24px;
+}
+
+.about-title {
+    font-size: 56px;
+    color: hsl(260, 100%, 55%);
+    animation: loadHome 1s ease-in;
+    margin-bottom: 22px;
 }
 
 .name {
@@ -118,6 +135,29 @@ main {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s, cursor .4s step-end infinite alternate;
+}
+
+.about-skills {
+    flex: auto;
+    display: flex;
+    gap: 24px;
+}
+
+.skill-container {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.skills-icon {
+    font-size: 64px;
 }
 
 @keyframes cursor {
@@ -244,8 +284,22 @@ main {
 }
 
 .about-img {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
+    margin-bottom: 18px;
+}
+
+.about-info {
+    max-width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__description {
+    color: hsl(260, 100%, 40%);
+    font-size: 18px;
 }
 
 .my-logo{
