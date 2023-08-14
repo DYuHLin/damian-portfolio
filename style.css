@@ -117,7 +117,7 @@ main {
 
 .about-container {
     display: flex;
-    gap: 24px;
+    gap: 5rem;
 }
 
 .about-title {
@@ -138,8 +138,9 @@ main {
 }
 
 .about-skills {
-    flex: auto;
-    display: flex;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
     gap: 24px;
 }
 
@@ -154,10 +155,22 @@ main {
     gap: 24px;
     border: 1px solid black;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.skill-container:hover {
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: .3rem .3rem 0 0 hsl(260, 100%, 40%);
+}
+
+.skill-name {
+    color: hsl(260, 100%, 60%);
 }
 
 .skills-icon {
     font-size: 64px;
+    color: hsl(260, 100%, 40%);
 }
 
 @keyframes cursor {
@@ -284,13 +297,13 @@ main {
 }
 
 .about-img {
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 18px;
 }
 
 .about-info {
-    max-width: 40vw;
+    max-width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
