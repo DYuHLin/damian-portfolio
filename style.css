@@ -118,6 +118,15 @@ main {
     flex-direction: column;
 }
 
+.contact-section {
+    margin: 28px;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .home-title {
     font-size: 56px;
     color: hsl(260, 100%, 55%);
@@ -130,6 +139,13 @@ main {
 }
 
 .about-title {
+    font-size: 56px;
+    color: hsl(260, 100%, 55%);
+    animation: loadHome 1s ease-in;
+    margin-bottom: 22px;
+}
+
+.contact-title {
     font-size: 56px;
     color: hsl(260, 100%, 55%);
     animation: loadHome 1s ease-in;
