@@ -460,22 +460,18 @@ input {
   
   .contact__card-icon{
     font-size: 2rem;
-    color: var(--title-color);
+    color: hsl(260, 100%, 70%);
     margin-bottom: .25rem;
-  }
-  
-  .contact__card-title,
-  .contact__card-data{
-    font-size: var(--small-font-size);
-  }
-  
-  .contact__card-title{
-    font-weight: var(--font-medium);
   }
   
   .contact__card-data{
     display: block;
     margin-bottom: .75rem;
+  }
+
+  footer {
+    padding: 12px;
+    background-color: hsl(260, 100%, 70%);;
   }
 
 @media(max-width: 768px) {
