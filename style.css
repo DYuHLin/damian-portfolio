@@ -471,7 +471,18 @@ input {
 
   footer {
     padding: 12px;
-    background-color: hsl(260, 100%, 70%);;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .socials {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
   }
 
 @media(max-width: 768px) {
