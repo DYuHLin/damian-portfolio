@@ -409,6 +409,31 @@ main {
     color: hsl(260, 100%, 40%);  
 }
 
+.contact__content {
+    width: 100%;
+}
+
+.contact__title {
+    text-align: center;
+    font-size: 26px;
+    color: hsl(260, 100%, 70%);
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.contact__form {
+    width: 70%;
+}
+
+.contact__form-area textarea {
+    width: 100%;
+    resize: none;
+}
+
 @media(max-width: 768px) {
     .menu-btn {
         display: block;
