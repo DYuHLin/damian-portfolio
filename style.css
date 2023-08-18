@@ -74,10 +74,6 @@ a:hover {
     background-color: hsl(260, 100%, 80%);
 }
 
-.active {
-    text-decoration: underline hsl(260, 100%, 70%);
-}
-
 .menu-btn {
     display: none;
     cursor: pointer;
@@ -104,7 +100,6 @@ main {
     margin-left: 28px;
     margin-right: 28px;
     height: 100vh;
-    min-width: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,7 +109,6 @@ main {
     flex: auto;
     margin: 28px;
     min-height: 100vh;
-    min-width: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -125,8 +119,6 @@ main {
 .projects-section {
     flex: auto;
     margin: 28px;
-    min-height: 100vh;
-    min-width: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -136,7 +128,6 @@ main {
     flex: auto;
     margin: 28px;
     min-height: 100vh;
-    min-width: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -149,6 +140,7 @@ main {
 }
 
 .home-text {
+    max-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -178,7 +170,7 @@ main {
     font-size: 42px;
     color: hsl(260, 100%, 60%);
     border-right: 5px solid hsl(260, 100%, 60%);
-    width: 100%;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s, cursor .4s step-end infinite alternate;
@@ -382,23 +374,21 @@ main {
 }
 
 .project {
-    width: 100%;
     display: flex;
     gap: 85px;
+    margin-bottom: 42px;
 }
 
 .project2 {
-    width: 100%;
     display: flex;
     gap: 85px;
-    margin-bottom: 24PX;
+    margin-bottom: 62px;
     margin-top: 32px;
 }
 
 .project-img {
     min-width: 50%;
     width: 600px;
-    height: 500px;
     margin-bottom: 18px;
 } 
 
@@ -439,7 +429,6 @@ main {
 }
 
 .contact__content {
-    width: 100%;
     display: flex;
     justify-content: center;
     gap: 80px;
@@ -531,13 +520,15 @@ input {
     }
 
     .project {
-        gap: 0;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .project2 {
-        gap: 0;
+        max-width: 100%;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -564,10 +555,11 @@ input {
     }
 
     .contact__form {
-        width: 80%;
+        width: 100%;
     }
 
     .name {
+        overflow-wrap: break-word;
         font-size: 34px;
     }
 
@@ -593,6 +585,10 @@ input {
   @media(max-width: 830px) {
     .about-container {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-info {
@@ -600,7 +596,7 @@ input {
     }
 
     .about__description {
-        width: 100%;
+        width: 80%;
     }
 
     .home__scroll {
@@ -612,13 +608,34 @@ input {
     }
 
     .about-skills {
-        min-width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 0.2fr);
+        align-items: center;
+        justify-content: center;
     }
   }
 
 @media(max-width: 768px) {
+    .home-text {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-btns, .social-links {
+        justify-content: center;
+    }
+
+    .home-title, .my-title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .name {
+        display: flex;
+        overflow-wrap: break-word;
+    }
+
     .home-section {
         margin: 0;
         padding: 0;
@@ -681,4 +698,61 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     border-radius: 7px;
+  }
+
+  @media(max-width: 650px) {
+    .name {
+        font-size: 28px;
+    }
+
+    .project-img {
+        min-width: 50%;
+        width: 550px;
+        margin-bottom: 18px;
+    } 
+  }
+
+  @media(max-width: 535px) {
+    .name {
+        font-size: 22px;
+    }
+
+    .project-img {
+        min-width: 50%;
+        width: 500px;
+        margin-bottom: 18px;
+    } 
+  }
+
+  @media(max-width: 500px) {
+
+    .project-img {
+        min-width: 50%;
+        width: 400px;
+        margin-bottom: 18px;
+    } 
+  }
+
+  @media(max-width: 420px) {
+    .name {
+        font-size: 19px;
+    }
+  }
+
+  @media(max-width: 420px) {
+    .about-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 0.2fr);
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  @media(max-width: 400px) {
+
+    .project-img {
+        min-width: 50%;
+        width: 350px;
+        margin-bottom: 18px;
+    } 
   }
