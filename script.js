@@ -14,6 +14,7 @@ menuLinks.forEach((btn) => {
     });
 });
 
+
 const contactForm = document.getElementById("contact-form"),
       contactName = document.getElementById("contact-name"),
       contactEmail = document.getElementById("contact-email"),
@@ -21,6 +22,11 @@ const contactForm = document.getElementById("contact-form"),
       contactCon = document.getElementById("contact-title")
 
 const sendEmail = (e) => {
+    const params = {
+        user_name: document.getElementById("contact-name").value,
+        user_email: document.getElementById("contact-email").value,
+        user_message: document.getElementById("contact-message").value,
+    }
     e.preventDefault()
 
     //checks if inputs have values
@@ -30,11 +36,11 @@ const sendEmail = (e) => {
         contactCon.textContent = 'Write in all the fields'
     }else{
         //serviceId, templateId, #form, publicKey
-        emailjs.sendForm('service_hvfhtef', 'template_cb1m6xe', '#contact-form', 'hW9sOe3e6b6pT5EwK')
-            .then(() => {
+        emailjs.send('service_hvfhtef', 'template_cb1m6xe', params)
+            .then((res) => {
                 //show message
                 let mmg = confirm("Message sent")
-
+                console.log(res);
             }, (error) => {
                 alert('Something went wrong...', error)
             })

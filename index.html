@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/logo.png">
     <title>Damian Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("hW9sOe3e6b6pT5EwK");
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -37,7 +46,7 @@
 
                 <div class="home-btns">
                     <a href="#about" class="home-about">About Me</a>
-                    <a class="home-cv">Download CV</a>
+                    <a download="" href="Assets/Damian CV.pdf" class="home-cv">Download CV</a>
                 </div>
 
                 <div class="social-links">
@@ -162,8 +171,8 @@
                         challenge for me. Other than that, it used standard react, CSS and HTML.
                     </p>
                     <div class="project-btns">
-                        <button class="live"><i class='bx bx-link-external project-icon'></i></button>
-                        <button class="code"><i class='bx bxl-github project-icon'></i></button>
+                        <a href="https://social-media-app-f9a3d.firebaseapp.com/" class="live"><i class='bx bx-link-external project-icon'></i></a>
+                        <a href="https://github.com/DYuHLin/social-media-app" class="code"><i class='bx bxl-github project-icon'></i></a>
                     </div>
                 </div>
             </div>
@@ -179,8 +188,8 @@
                         vanilla css and html.
                     </p>
                     <div class="project-btns">
-                        <button class="live"><i class='bx bx-link-external project-icon'></i></button>
-                        <button class="code"><i class='bx bxl-github project-icon'></i></button>
+                        <a href="https://dyuhlin.github.io/shopping-cart/" class="live"><i class='bx bx-link-external project-icon'></i></a>
+                        <a href="https://github.com/DYuHLin/shopping-cart" class="code"><i class='bx bxl-github project-icon'></i></a>
                     </div>
                 </div>
 
@@ -204,8 +213,8 @@
                         good introduction into using firebase.
                     </p>
                     <div class="project-btns">
-                        <button class="live"><i class='bx bx-link-external project-icon'></i></button>
-                        <button class="code"><i class='bx bxl-github project-icon'></i></button>
+                        <a href="https://wheres-waldo-fe9a3.firebaseapp.com/" class="live"><i class='bx bx-link-external project-icon'></i></a>
+                        <a href="https://github.com/DYuHLin/wheres-waldo" class="code"><i class='bx bxl-github project-icon'></i></a>
                     </div>
                 </div>
             </div>
@@ -219,8 +228,8 @@
                         application working with API's. It was created with Javascript, CSS and HTML.
                     </p>
                     <div class="project-btns">
-                        <button class="live"><i class='bx bx-link-external project-icon'></i></button>
-                        <button class="code"><i class='bx bxl-github project-icon'></i></button>
+                        <a href="https://dyuhlin.github.io/weather-app/" class="live"><i class='bx bx-link-external project-icon'></i></a>
+                        <a href="https://github.com/DYuHLin/weather-app" class="code"><i class='bx bxl-github project-icon'></i></a>
                     </div>
                 </div>
 
@@ -243,8 +252,8 @@
                         and with little difficulty. I used characters from the anime Gintama for the game.
                     </p>
                     <div class="project-btns">
-                        <button class="live"><i class='bx bx-link-external project-icon'></i></button>
-                        <button class="code"><i class='bx bxl-github project-icon'></i></button>
+                        <a href="https://dyuhlin.github.io/memory-card/" class="live"><i class='bx bx-link-external project-icon'></i></a>
+                        <a href="https://github.com/DYuHLin/memory-card" class="code"><i class='bx bxl-github project-icon'></i></a>
                     </div>
                 </div>
             </div>
@@ -261,8 +270,8 @@
                         gained a better understanding of the map function and how to use it with useState.
                     </p>
                     <div class="project-btns">
-                        <button class="live"><i class='bx bx-link-external project-icon'></i></button>
-                        <button class="code"><i class='bx bxl-github project-icon'></i></button>
+                        <a href="https://dyuhlin.github.io/cv-application/" class="live"><i class='bx bx-link-external project-icon'></i></a>
+                        <a href="https://github.com/DYuHLin/cv-application/tree/main/cv-project" class="code"><i class='bx bxl-github project-icon'></i></a>
                     </div>
                 </div>
 
@@ -337,6 +346,5 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 </html>
