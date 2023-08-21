@@ -12,6 +12,14 @@ body {
     background-color: white;
 }
 
+.light-theme {
+    background-color: hsl(260, 100%, 10%);
+}
+
+.light-theme header {
+    background-color: hsl(260, 100%, 10%);
+}
+
 main{
     height: 100%;
     overflow: hidden;
@@ -43,7 +51,7 @@ nav {
     font-size: 22px;
     font-weight: 400;
     word-wrap: break-word;
-    color: hsl(260, 100%, 55%);
+    color: hsl(260, 100%, 60%);
 }
 
 a {
@@ -134,9 +142,22 @@ main {
 }
 
 .home-title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
     font-size: 56px;
     color: hsl(260, 100%, 55%);
     animation: loadHome 1s ease-in;
+}
+
+.change-theme {
+    cursor: pointer;
+    transition: transform .3s ease;
+    animation: loadHome 1s ease-in;
+}
+
+.change-theme:hover {
+    transform: translateY(-5px);
 }
 
 .home-text {
@@ -210,7 +231,7 @@ main {
 
 .skills-icon {
     font-size: 64px;
-    color: hsl(260, 100%, 40%);
+    color: hsl(260, 100%, 60%);
 }
 
 @keyframes cursor {
@@ -300,6 +321,7 @@ main {
 }
 
 .home-icon {
+    color: hsl(260, 100%, 60%);
     font-size: 28px;
     transition: transform .3s ease;
     animation: loadHome 1s ease-in;
@@ -358,7 +380,7 @@ main {
 }
 
 .about__description {
-    color: hsl(260, 100%, 40%);
+    color: hsl(260, 100%, 60%);
     font-size: 18px;
 }
 
@@ -456,6 +478,11 @@ input {
     padding: 12px;
 }
 
+.light-theme input {
+    background-color: hsl(260, 100%, 10%);
+    color: hsl(260, 100%, 90%);
+}
+
 .contact__form {
     width: 60%;
 }
@@ -467,6 +494,11 @@ input {
     border: 2px solid hwb(260 40% 0%);
     border-radius: 5px;
     padding: 12px;
+}
+
+.light-theme .contact__form-area textarea {
+    background-color: hsl(260, 100%, 10%);
+    color: hsl(260, 100%, 90%);
 }
 
 .contact__card{
@@ -680,6 +712,10 @@ input {
         width: 100%;
         text-align: center;
         transition: 0.3s;
+    }
+
+    .light-theme .nav-menu {
+        background-color: hsl(260, 100%, 10%);
     }
 
     .nav-item {
