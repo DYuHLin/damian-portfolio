@@ -187,11 +187,15 @@ main {
     margin-bottom: 22px;
 }
 
+.name-box {
+    display: inline-block;
+}
+
 .name {
     font-size: 42px;
     color: hsl(260, 100%, 60%);
     border-right: 5px solid hsl(260, 100%, 60%);
-    max-width: 100%;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s, cursor .4s step-end infinite alternate;
@@ -510,16 +514,16 @@ input {
   
   .contact__card-icon{
     font-size: 2rem;
-    color: hsl(260, 100%, 70%);
+    color: hsl(260, 100%, 90%);
     margin-bottom: .25rem;
   }
 
   .contact__card-title {
-    color: hsl(260, 100%, 50%);
+    color: hsl(260, 100%, 60%);
   }
   
   .contact__card-data{
-    color: hsl(260, 100%, 55%);
+    color: hsl(260, 100%, 70%);
     display: block;
     margin-bottom: .75rem;
   }
