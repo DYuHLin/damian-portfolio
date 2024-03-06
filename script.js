@@ -35,7 +35,7 @@ const sendEmail = (e) => {
         //show message
         contactCon.textContent = 'Write in all the fields'
     }else{
-        //serviceId, templateId, #form, publicKey
+        //serviceId, templateId
         emailjs.send('service_hvfhtef', 'template_cb1m6xe', params)
             .then((res) => {
                 //show message
