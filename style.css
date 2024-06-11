@@ -338,8 +338,9 @@ main {
 .home__scroll {
     right: -1.5rem;
     bottom: 4rem;
-    display: grid;
     gap: 3rem;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
     animation: loadHome 1s ease-in;
